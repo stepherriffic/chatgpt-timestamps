@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Chat Timestamps</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <div class="masthead"><span class="logo" aria-hidden="true">◷</span><div>
+      <h1>Chat timestamps</h1>
+      <p>Private. Local. No fuss.</p>
+    </div></div>
+    <div class="settings">
+      <label class="setting" for="format24">
+        <span><strong>24-hour time</strong><small>Off = 12-hour AM/PM</small></span>
+        <input id="format24" type="checkbox">
+      </label>
+      <label class="setting" for="userOnly">
+        <span><strong>Your messages only</strong><small>Off = show reply times too</small></span>
+        <input id="userOnly" type="checkbox" checked>
+      </label>
+    </div>
+    <div class="hint" id="status" role="status" aria-live="polite">Open a ChatGPT conversation to see timestamps.</div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
